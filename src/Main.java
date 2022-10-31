@@ -1,20 +1,17 @@
-import java.util.*;
 
-public class Main
-{
-	public static void main(String[] args)
-	{
-		System.out.println("Hello World!");
+public class Main {
 
-		Scanner input = new Scanner(System.in);
-
-		System.out.print("Enter a number: ");
-		double number1 = input.nextDouble();
-
-		System.out.print("Enter second number: ");
-		double number2 = input.nextDouble();
-
-		double product = number1 * number2;
-		System.out.printf("The product of both numbers is: %f", product);
-	}
+  
+    public static void main(String[] args) {
+        Insects insect;
+        Insect1 bee = new Insect1 ("Bee", "16 cm", "Animalia");
+        Insect2 cricket = new Insect2 ("Cricket", "21 cm", "House Cricket");
+        
+        insect = bee;
+        System.out.println("Name of the 1st insect: " + insect.getName() + "\nSound: " + insect.MakeSound() + "\nSize: " + insect.getSize() + "\n");
+        
+        insect = cricket;
+        System.out.println("Name of the 2nd insect: " + insect.getName() + "\nSound: " + insect.MakeSound() + "\nSize: " + insect.getSize() + "\n");
+    }
+    
 }
